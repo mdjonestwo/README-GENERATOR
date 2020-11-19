@@ -5,80 +5,83 @@ inquirer
     .prompt([
         {
             type: 'input',
-            message: 'Title',
+            message: 'What is the title of this project?',
             name: "title" 
         },
         {
             type: 'input',
-            message: 'Description',
+            message: 'How would you describe this project?',
             name: "description" 
         },
         {
             type: 'input',
-            message: 'Installation Instructions',
+            message: 'How does one install this project?',
             name: "install" 
         },
         {
             type: 'input',
-            message: 'Usage Information?',
+            message: 'How can this project be used?',
             name: "usage" 
         },    
         {
             type: 'input',
-            message: 'Contribution Guidelines',
+            message: 'What are the guidelines to making a contribution?',
             name: "guidelines" 
         },
         {
             type: 'input',
-            message: 'Test Instructions',
+            message: 'What are the test instructions? ',
             name: "test" 
         },    
         {
             type: 'list',
-            message: 'License',
+            message: 'What is the project licensed under?',
             name: "license", 
-            choices: ['MIT', 'YOU', "LUV"]
+            choices: ['MIT', 'GNU GPLv3', "ISC", "N/A"]
         },
         {
             type: 'input',
-            message: 'GitHub Username',
+            message: 'What is your GitHub Username?',
             name: "github",     
         },
         {
             type: 'input',
-            message: 'Email',
+            message: 'What is your email?',
             name: "email", 
         }
     ])
     .then((response) => {
         const filename = `${response.title.toLowerCase().split(' ').join("-")}.md`
-        function Data(title, description, install, usage, guidelines, test, license){
-            this.title = title
-            this.description = description
-            this.install = install
-            this.usage = usage
-            this.guidelines = guidelines
-            this.test = test
-            this.license = license
-        }
-        const newData = new Data(response.title)
-       
-
         const foo =
-        `## TITLE
-        ${response.title}
-        ## DESCRIPTION 
-        ${response.description}
-        ## INSTALLATION INSTRUCTIONS 
-        ${response.install}
-        ## USAGE INFORMATION 
-        ${response.usage}
-        ## CONTRIBUTION GUIDELINES 
-        ${response.guidelines}
-        ## TEST INSTRUCTIONS
-        ${response.test}
-        ## LICENSE
-        ${response.license}`
+    
+`## Table of Contents
+* [Description](#description)
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributors](#contributors)
+* [Questions](#questions)
+        
+## TITLE
+${response.title}
+
+## DESCRIPTION 
+${response.description}
+
+## INSTALLATION INSTRUCTIONS 
+${response.install}
+
+## USAGE INFORMATION 
+${response.usage}
+
+## CONTRIBUTION GUIDELINES 
+${response.guidelines}
+
+## TEST INSTRUCTIONS
+${response.test}
+
+## LICENSE
+${response.license}`
         
         fs.writeFile(filename, foo, {}, (e) =>
         console.log(e)
