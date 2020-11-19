@@ -37,7 +37,7 @@ inquirer
             type: 'list',
             message: 'What is the project licensed under?',
             name: "license", 
-            choices: ['MIT', 'GNU GPLv3', "ISC", "N/A"]
+            choices: ['MIT', 'WTFPL', "ISC", "N/A"]
         },
         {
             type: 'input',
@@ -82,7 +82,7 @@ ${response.guidelines}
 ${response.test}
 
 ## LICENSE
-${response.license}
+[![License: ${response.license}](https://img.shields.io/badge/License-${response.license}-yellow.svg)](https://opensource.org/licenses/${response.license})
 
 ## QUESTIONS
 Contact me 
