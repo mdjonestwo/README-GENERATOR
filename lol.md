@@ -1,14 +1,14 @@
 ## TITLE
-        llol
+        LOL
         ## DESCRIPTION 
-        asd
+        as
         ## INSTALLATION INSTRUCTIONS 
-        sd
+        ASFASF
         ## USAGE INFORMATION 
-        aWF
+        GWGW
         ## CONTRIBUTION GUIDELINES 
-        WAF
+        RH
         ## TEST INSTRUCTIONS
-        AWF
+        AZ
         ## LICENSE
         MIT

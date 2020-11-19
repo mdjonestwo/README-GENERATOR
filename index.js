@@ -60,9 +60,6 @@ inquirer
             this.guidelines = guidelines
             this.test = test
             this.license = license
-            this.getDetails = function () {
-                return "## TITLE" + this.title;
-            }
         }
         const newData = new Data(response.title)
        
