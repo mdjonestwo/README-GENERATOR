@@ -58,8 +58,9 @@ inquirer
 * [Description](#description)
 * [Installation](#installation)
 * [Usage](#usage)
+* [Contribution](#contribution)
+* [Test](#Test)
 * [License](#license)
-* [Contributors](#contributors)
 * [Questions](#questions)
         
 ## TITLE
@@ -74,14 +75,19 @@ ${response.install}
 ## USAGE INFORMATION 
 ${response.usage}
 
-## CONTRIBUTION GUIDELINES 
+## CONTRIBUTION
 ${response.guidelines}
 
-## TEST INSTRUCTIONS
+## TEST
 ${response.test}
 
 ## LICENSE
-${response.license}`
+${response.license}
+
+## QUESTIONS
+Contact me 
+Github: (https://github.com/${response.github})
+Email: ${response.email}`
         
         fs.writeFile(filename, foo, {}, (e) =>
         console.log(e)
