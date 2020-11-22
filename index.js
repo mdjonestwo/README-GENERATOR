@@ -69,10 +69,10 @@ ${response.title}
 ## DESCRIPTION 
 ${response.description}
 
-## INSTALLATION INSTRUCTIONS 
+## INSTALLATION
 ${response.install}
 
-## USAGE INFORMATION 
+## USAGE
 ${response.usage}
 
 ## CONTRIBUTION
@@ -82,7 +82,7 @@ ${response.guidelines}
 ${response.test}
 
 ## LICENSE
-[![License: ${response.license}](https://img.shields.io/badge/License-${response.license}-yellow.svg)](https://opensource.org/licenses/${response.license})
+[![License: ${response.license}](https://img.shields.io/badge/License-${response.license}-blue.svg)](https://opensource.org/licenses/${response.license})
 
 ## QUESTIONS
 Contact me 
